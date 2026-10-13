@@ -2685,48 +2685,49 @@ a.button_projet svg {
   white-space: nowrap;
 }
 
-/* Barres de niveau */
+/* Barres de niveau : piste grise + remplissage teal arrondi */
 .skill-meter {
+  --meter-fill: #256275;
+  --meter-track: #dcdcdc;
   position: relative;
   width: 305px;
   height: 11px;
   display: block;
+  border-radius: 999px;
+  background: var(--meter-track);
   overflow: hidden;
 }
 
-/* Fond */
-.skill-meter {
-  background: repeating-linear-gradient(to right, #000 0, #000 27px, transparent 27px, transparent 35px);
-}
-
-/* Variante pour donner les niveaux de la maquette */
 .skill-meter::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  height: 11px;
-  background: repeating-linear-gradient(to right, #ebe9e4 0, #ebe9e4 5px, transparent 5px, transparent 35px);
+  height: 100%;
+  width: var(--level, 0%);
+  border-radius: 999px;
+  background: var(--meter-fill);
 }
 
-.skill-meter--95::after {
-  width: 5%;
+/* Niveaux (= pourcentage rempli) */
+.skill-meter--90 {
+  --level: 90%;
 }
 
-.skill-meter--85::after {
-  width: 15%;
+.skill-meter--86 {
+  --level: 86%;
 }
 
-.skill-meter--80::after {
-  width: 20%;
+.skill-meter--80 {
+  --level: 80%;
 }
 
-.skill-meter--75::after {
-  width: 25%;
+.skill-meter--72 {
+  --level: 72%;
 }
 
-.skill-meter--65::after {
-  width: 35%;
+.skill-meter--68 {
+  --level: 68%;
 }
 
 /* =========================================================
