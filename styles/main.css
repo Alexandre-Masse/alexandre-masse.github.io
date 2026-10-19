@@ -2470,6 +2470,15 @@ a.button_projet svg {
   letter-spacing: 0.06em;
 }
 
+@media (max-width: 900px) {
+  .projets .swiper-slide {
+    position: relative;
+    height: 90vw;
+    overflow: hidden;
+    border-radius: 7px;
+    background: #000;
+  }
+}
 /* =========================================================
    LIEN
 ========================================================= */
@@ -2522,34 +2531,72 @@ a.button_projet svg {
 /* =========================================================
    PAGINATION
 ========================================================= */
+/* 
 .projets .swiper-pagination {
+    position: relative;
+
+    left: auto;
+    bottom: auto;
+
+    width: 200px;
+    height: 7px;
+
+    margin: 23px auto 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 10px;
+
+    background: #000;
+}
+ */
+/* On cache les bullets */
+/* .projets .swiper-pagination-bullet {
+    width: 100px;
+    margin: 0;
+}
+.projets .swiper-pagination-bullet-active {
+    width: 100px;
+    height: 7px;
+    margin: 0;
+    border-radius: 10px;
+
+    background: #5bb5c8;
+}
+ */
+/* =========================================================
+   SCROLLBAR — PROJETS
+========================================================= */
+.projets .swiper-scrollbar {
   position: relative;
   left: auto;
   bottom: auto;
+  transition: all 0.1s ease-in;
   width: 200px;
   height: 7px;
-  margin: 23px auto 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
+  margin: 30px auto 0;
   border-radius: 10px;
   background: #000;
+  opacity: 1;
 }
 
-/* On cache les bullets */
-.projets .swiper-pagination-bullet {
-  width: 100px;
-  margin: 0;
-}
-
-.projets .swiper-pagination-bullet-active {
-  width: 100px;
-  height: 7px;
-  margin: 0;
+/* Curseur qui se déplace avec le slider */
+.projets .swiper-scrollbar-drag {
+  height: 100%;
   border-radius: 10px;
-  background: #5bb5c8;
+  background: #159baa;
 }
 
+/* Ajustement mobile */
+@media (max-width: 600px) {
+  .projets .swiper-scrollbar {
+    width: 160px;
+    height: 6px;
+    margin-top: 24px;
+  }
+}
 /* =========================================================
    À PROPOS
    Le .wrapper existant gère les marges latérales.
