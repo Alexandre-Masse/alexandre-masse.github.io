@@ -27,7 +27,7 @@
   --font-secondary:
       'Noto Sans', 'Barlow', 'Fira Code', monospace;
   --font-size-content: clamp(0.88rem, 0.63vw + 0.69rem, 1.25rem);
-  --font-size-h1: clamp(3rem, 5vw + 1.5rem, 6rem);
+  --font-size-h1: clamp(2.5rem, 5.83vw + 0.75rem, 6rem);
   --font-size-h2: clamp(0.63rem, 1.04vw + 0.31rem, 1.25rem);
   --font-size-h3: clamp(1.25rem, 2.08vw + 0.63rem, 2.5rem);
   --font-size-h4: clamp(1.25rem, 2.08vw + 0.63rem, 2.5rem);
@@ -2997,7 +2997,7 @@ a.button_projet svg {
   ===================================================== */
   .a-propos__title {
     gap: 10px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 23px;
     letter-spacing: 2.52px;
   }
