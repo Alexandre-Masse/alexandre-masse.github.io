@@ -2335,6 +2335,7 @@ h1 {
 h1 span {
   font-weight: 700;
 }
+
 .hero .wrapper {
   margin-top: 220px;
 }
@@ -2394,6 +2395,7 @@ a.button_play:hover svg {
 @media (max-width: 1100px) {
   a.button_play {
     width: 100%;
+    font-size: 12px;
   }
   a.button_play svg {
     width: 50px;
@@ -2432,9 +2434,9 @@ a.button_projet svg {
 }
 @media (max-width: 1100px) {
   a.button_projet {
-    padding: 10px;
-    font-size: 13px;
-    gap: 0px;
+    padding: 8px;
+    font-size: 12px;
+    gap: 5px;
     width: 100%;
   }
 }
@@ -2668,9 +2670,10 @@ a.button_projet svg {
    NE PAS modifier le CSS du .wrapper.
 ========================================================= */
 .a-propos {
-  margin-top: 360px;
+  margin-top: 150px;
   padding-top: 125px;
   padding-bottom: 80px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #ebe9e4 50%);
   color: #000;
 }
 .a-propos .wrapper {
@@ -2982,11 +2985,12 @@ a.button_projet svg {
    MOBILE
    Figma : 379px
 ========================================================= */
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .a-propos {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 10;
     gap: 40px;
+    background-color: #ebe9e4;
   }
   /* =====================================================
      TITRES
@@ -2998,7 +3002,7 @@ a.button_projet svg {
     letter-spacing: 2.52px;
   }
   .a-propos__title-line {
-    width: 73px;
+    width: 20px;
   }
   /* =====================================================
      01 + 02
@@ -3013,6 +3017,10 @@ a.button_projet svg {
     width: 100%;
     height: auto;
     align-items: center;
+  }
+  .a-propos__profile .technical-item,
+  .a-propos__technical .technical-item {
+    justify-content: center;
   }
   /* =====================================================
      SÉPARATION
@@ -3033,6 +3041,7 @@ a.button_projet svg {
     width: 338px;
     height: 35px;
     gap: 35px;
+    justify-content: center;
   }
   .profile-item p {
     width: 180px;
@@ -3111,14 +3120,13 @@ a.button_projet svg {
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(1, 200px);
     justify-content: center;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-    row-gap: 20px;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+    row-gap: 5px;
   }
   .interest-item {
-    width: 200px;
     height: 35px;
     font-size: 14px;
     line-height: 23px;
@@ -3134,11 +3142,10 @@ a.button_projet svg {
   }
   .qualities-list {
     display: grid;
-    grid-template-columns: max-content max-content;
     justify-content: center;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-    row-gap: 20px;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+    row-gap: 5px;
   }
   .quality-item {
     height: 35px;
