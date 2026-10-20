@@ -1337,6 +1337,12 @@ a:hover {
   margin: 0 auto;
   padding: 0 var(--spacing-lg);
 }
+@media (max-width: 500px) {
+  .wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
 
 /* ==========================================================================
    icons / component
@@ -1406,7 +1412,7 @@ header.header div.wrapper {
   align-items: center;
   gap: 0.625rem;
 }
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
   header.header div.wrapper {
     padding: 20px 24px;
   }
@@ -1418,7 +1424,7 @@ header.header .header__container {
   gap: 20px;
   align-items: center;
 }
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
   header.header .header__container {
     display: flex;
     justify-content: space-between;
@@ -1505,7 +1511,7 @@ header.header .header__toggle span {
   background-color: #000000;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
   header.header .header__toggle {
     display: flex;
   }
@@ -1568,7 +1574,7 @@ html.nav-is-active .header__toggle span:nth-child(2) {
 html.nav-is-active .header__toggle span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
   html.nav-is-active nav.nav-primary,
   html.nav-is-active .header__right {
     opacity: 1;
@@ -2260,6 +2266,16 @@ img.robot {
     width: 80%;
   }
 }
+@media (max-width: 1300px) {
+  img.robot {
+    width: 70%;
+  }
+}
+@media (max-width: 700px) {
+  img.robot {
+    width: 100%;
+  }
+}
 
 .bg {
   top: 50px;
@@ -2268,6 +2284,11 @@ img.robot {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 1300px) {
+  .bg {
+    top: 100px;
+  }
 }
 
 .shape-third {
@@ -2302,6 +2323,11 @@ img.robot {
   height: 2px;
   background-color: var(--color-black);
 }
+@media (max-width: 500px) {
+  .top-label {
+    gap: 1rem;
+  }
+}
 
 h1 {
   line-height: 90%;
@@ -2309,9 +2335,8 @@ h1 {
 h1 span {
   font-weight: 700;
 }
-
 .hero .wrapper {
-  margin-top: 150px;
+  margin-top: 220px;
 }
 .hero .wrapper h2 {
   width: -moz-fit-content;
@@ -2328,6 +2353,24 @@ h1 span {
   justify-content: left;
   align-items: center;
   gap: 2.5rem;
+}
+@media (max-width: 1100px) {
+  .hero .wrapper {
+    margin-top: 480px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .hero .wrapper div.action {
+    gap: 1rem;
+  }
+  .hero .wrapper p {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .hero .wrapper {
+    margin-top: 400px;
+  }
 }
 
 a.button_play {
@@ -2347,6 +2390,15 @@ a.button_play svg {
 }
 a.button_play:hover svg {
   fill: var(--color-btn-background-hover);
+}
+@media (max-width: 1100px) {
+  a.button_play {
+    width: 100%;
+  }
+  a.button_play svg {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 a.button_projet {
@@ -2378,6 +2430,14 @@ a.button_projet svg {
   transition: all 0.1s ease-in;
   fill: var(--color-white);
 }
+@media (max-width: 1100px) {
+  a.button_projet {
+    padding: 10px;
+    font-size: 13px;
+    gap: 0px;
+    width: 100%;
+  }
+}
 
 /* =========================================================
    PROJETS
@@ -2385,6 +2445,11 @@ a.button_projet svg {
 .projets {
   padding-top: 350px;
   margin-bottom: 100px;
+}
+@media (max-width: 1100px) {
+  .projets {
+    padding-top: 100px;
+  }
 }
 
 /* ---------------------------------------------------------
