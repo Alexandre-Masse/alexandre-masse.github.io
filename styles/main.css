@@ -2116,7 +2116,7 @@ html.header-is-hidden .header {
 /* =========================================================
    RESPONSIVE
 ========================================================= */
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
   .footer {
     padding: 40px 0;
   }
@@ -2219,8 +2219,8 @@ html.header-is-hidden .header {
 }
 .has-js [data-scrolly=fromLeft] {
   opacity: 0;
-  transform: translateX(-60px);
-  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateX(-200px);
+  transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .has-js [data-scrolly=fromLeft].is-active {
   opacity: 1;
@@ -2252,6 +2252,56 @@ html.header-is-hidden .header {
 .has-js [data-scrolly=flipFromBottom].is-active {
   opacity: 1;
   transform: rotateX(0deg);
+}
+.has-js [data-scrolly=spanLeft90] {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.has-js [data-scrolly=spanLeft90]::after {
+  width: 0%;
+  transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.has-js [data-scrolly=spanLeft90].is-active::after {
+  width: 90%;
+}
+.has-js [data-scrolly=spanLeft72] {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.has-js [data-scrolly=spanLeft72]::after {
+  width: 0%;
+  transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.has-js [data-scrolly=spanLeft72].is-active::after {
+  width: 72%;
+}
+.has-js [data-scrolly=spanLeft80] {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.has-js [data-scrolly=spanLeft80]::after {
+  width: 0%;
+  transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.has-js [data-scrolly=spanLeft80].is-active::after {
+  width: 80%;
+}
+.has-js [data-scrolly=spanLeft86] {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.has-js [data-scrolly=spanLeft86]::after {
+  width: 0%;
+  transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.has-js [data-scrolly=spanLeft86].is-active::after {
+  width: 86%;
+}
+.has-js [data-scrolly=spanLeft68] {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.has-js [data-scrolly=spanLeft68]::after {
+  width: 0%;
+  transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.has-js [data-scrolly=spanLeft68].is-active::after {
+  width: 68%;
 }
 
 img.robot {

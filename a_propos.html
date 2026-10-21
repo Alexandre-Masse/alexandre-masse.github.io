@@ -11,7 +11,7 @@
     <script src="scripts/main.js" defer></script>
 </head>
 
-<body data-component="Scrolly" data-no-repeat>
+<body data-component="Scrolly">
     <header class="header" data-component="Header">
         <div class="wrapper">
             <div class="header__container">
@@ -94,8 +94,8 @@
 
     <section class="hero">
         <div class="wrapper">
-            <div class="hero-content">
-                <div class="top-label">
+            <div class="hero-content" data-scrolly="fromLeft">
+                <div class="top-label" data-scrolly="fromLeft">
                     <span>À PROPOS</span>
                     <span class="line"></span>
                 </div>
@@ -105,7 +105,7 @@
                     <span>DE 3D</span>
                 </h1>
                 <h2>MODÉLISATION / ANIMATION / MEDIAS INTERACTIFS</h2>
-                <p>
+                <p data-scrolly="fromLeft">
                     Passioné par la
                     <strong>création</strong>
                     d’univers
@@ -115,7 +115,7 @@
                     à travers la modélisation, l’animation et les environnements.
                 </p>
                 <div class="action">
-                    <a href="index.html#projet" class="button_projet">
+                    <a href="index.html#projet" class="button_projet" data-scrolly="fromLeft">
                         Voir mes projets
                         <svg class="icon icon--lg">
                             <use href="#icon-fleche-droit"></use>
@@ -182,27 +182,27 @@
                     <div class="technical-list">
                         <div class="technical-item">
                             <span>Modélisation 3D</span>
-                            <span class="skill-meter skill-meter--90"></span>
+                            <span class="skill-meter skill-meter--90" data-scrolly="spanLeft90"></span>
                         </div>
 
                         <div class="technical-item">
                             <span>Texturisation</span>
-                            <span class="skill-meter skill-meter--72"></span>
+                            <span class="skill-meter skill-meter--72" data-scrolly="spanLeft72"></span>
                         </div>
 
                         <div class="technical-item">
                             <span>Éclairage &amp; rendu</span>
-                            <span class="skill-meter skill-meter--80"></span>
+                            <span class="skill-meter skill-meter--80" data-scrolly="spanLeft80"></span>
                         </div>
 
                         <div class="technical-item">
                             <span>Animation</span>
-                            <span class="skill-meter skill-meter--86"></span>
+                            <span class="skill-meter skill-meter--86" data-scrolly="spanLeft86"></span>
                         </div>
 
                         <div class="technical-item">
                             <span>Prog. nodale</span>
-                            <span class="skill-meter skill-meter--68"></span>
+                            <span class="skill-meter skill-meter--68" data-scrolly="spanLeft68"></span>
                         </div>
                     </div>
                 </div>
