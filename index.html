@@ -91,15 +91,15 @@
        C688, 109 125, 14 0, 0
        V1535 H1440 Z" fill="#EBE9E4" />
         </svg>
-        <img class="robot" src="assets/images/Robot_hero_hub.png" alt="" />
+        <img class="robot" src="assets/images/Robot_hero_hub.png" alt="" data-parallax />
 
         <img />
     </div>
 
     <section class="hero">
         <div class="wrapper">
-            <div class="hero-content">
-                <div class="top-label">
+            <div class="hero-content" data-scrolly="fromLeft">
+                <div class="top-label" data-scrolly="fromLeft">
                     <span>ARTISTE 3D</span>
                     <span class="line"></span>
                 </div>
@@ -109,9 +109,11 @@
                     <span>MASSÉ</span>
                 </h1>
                 <h2>MODÉLISATION / ANIMATION / MEDIAS INTERACTIFS</h2>
-                <p>Je cherche à développer mes compétences à travers des projets qui me permettent d’apprendre, d’expérimenter et de donner vie à mes idées.</p>
+                <p data-scrolly="fromLeft">
+                    Je cherche à développer mes compétences à travers des projets qui me permettent d’apprendre, d’expérimenter et de donner vie à mes idées.
+                </p>
                 <div class="action">
-                    <a href="#projet" class="button_projet">
+                    <a href="#projet" class="button_projet" data-scrolly="fromLeft">
                         Voir mes projets
                         <svg class="icon icon--lg">
                             <use href="#icon-fleche-droit"></use>
@@ -128,15 +130,17 @@
             </div>
         </div>
     </section>
+
     <section class="projets" id="projet">
         <div class="wrapper">
             <div class="gallery__container">
                 <div class="gallery__content">
-                    <div class="top-label">
+                    <div class="top-label" data-scrolly="fromLeft">
                         <span>MES PROJETS</span>
                         <span class="line"></span>
                     </div>
-                    <h1>
+
+                    <h1 data-scrolly="fromLeft">
                         DES IDÉES
                         <br />
                         <span>EN ACTION</span>
@@ -144,87 +148,96 @@
                 </div>
             </div>
         </div>
+
         <div class="swiper" data-component="Carousel" data-autoplay data-split data-loop>
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="assets/images/vignette_integration.png" alt="Photo d'un restaurant" />
+                <!-- LA RUELLE -->
+                <a class="swiper-slide project-card" href="https://www.behance.net/gallery/257318395/La-ruelle" target="_blank" rel="noopener noreferrer" aria-label="Découvrir le projet La Ruelle">
+                    <img src="assets/images/vignette_integration.png" alt="Environnement 3D de la ruelle" />
+
+                    <div class="content">
+                        <p class="top">CAMERA MAPPING</p>
+                        <p class="middle">La Ruelle</p>
+
+                        <div class="lien">
+                            <span>Voir le projet</span>
+                            <svg class="icon icon--lg" aria-hidden="true">
+                                <use href="#icon-fleche-rond"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- ROBOT 3D -->
+                <a class="swiper-slide project-card" href="https://www.behance.net/gallery/257285527/Robot-CGI" target="_blank" rel="noopener noreferrer" aria-label="Découvrir le projet Robot CGI">
+                    <img src="assets/images/vignette_robot.png" alt="Robot futuriste modélisé en 3D" />
+
                     <div class="content">
                         <p class="top">MODÉLISATION 3D</p>
-                        <p class="middle">La ruelle</p>
+                        <p class="middle">Robot CGI</p>
+
                         <div class="lien">
-                            <a href="https://www.behance.net/gallery/257318395/La-ruelle" target="_blank" rel="noopener noreferrer">
-                                Voir le projet
-                                <svg class="icon icon--lg">
-                                    <use href="#icon-fleche-rond"></use>
-                                </svg>
-                            </a>
+                            <span>Voir le projet</span>
+                            <svg class="icon icon--lg" aria-hidden="true">
+                                <use href="#icon-fleche-rond"></use>
+                            </svg>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/vignette_robot.png" alt="Photo d'un restaurant" />
+                </a>
+
+                <!-- ROUTE INFINIE -->
+                <a class="swiper-slide project-card" href="https://www.behance.net/gallery/256604997/Route-Infini" target="_blank" rel="noopener noreferrer" aria-label="Découvrir le projet Route infinie">
+                    <img src="assets/images/vignette_route_infini.png" alt="Environnement spatial de Route infinie" />
+
                     <div class="content">
-                        <p class="top">MODÉLISATION 3D</p>
-                        <p class="middle">ROBOT 3D</p>
+                        <p class="top">ENVIRONNEMENT 3D</p>
+                        <p class="middle">Route infinie</p>
+
                         <div class="lien">
-                            <a href="https://www.behance.net/gallery/257285527/Robot-CGI" target="_blank" rel="noopener noreferrer">
-                                Voir le projet
-                                <svg class="icon icon--lg">
-                                    <use href="#icon-fleche-rond"></use>
-                                </svg>
-                            </a>
+                            <span>Voir le projet</span>
+                            <svg class="icon icon--lg" aria-hidden="true">
+                                <use href="#icon-fleche-rond"></use>
+                            </svg>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/vignette_route_infini.png" alt="Photo d'un restaurant" />
+                </a>
+
+                <!-- LED INVADER -->
+                <a class="swiper-slide project-card" href="https://www.behance.net/gallery/257317933/Led-Invader" target="_blank" rel="noopener noreferrer" aria-label="Découvrir le projet LED Invader">
+                    <img src="assets/images/vignette_led_vader.png" alt="Installation LED du jeu interactif LED Invader" />
+
                     <div class="content">
-                        <p class="top">MODÉLISATION 3D</p>
-                        <p class="middle">Route infini</p>
+                        <p class="top">MÉDIAS INTERACTIFS</p>
+                        <p class="middle">LED Invader</p>
+
                         <div class="lien">
-                            <a href="https://www.behance.net/gallery/256604997/Route-Infini" target="_blank" rel="noopener noreferrer">
-                                Voir le projet
-                                <svg class="icon icon--lg">
-                                    <use href="#icon-fleche-rond"></use>
-                                </svg>
-                            </a>
+                            <span>Voir le projet</span>
+                            <svg class="icon icon--lg" aria-hidden="true">
+                                <use href="#icon-fleche-rond"></use>
+                            </svg>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/vignette_led_vader.png" alt="Photo d'un restaurant" />
+                </a>
+
+                <!-- NÉON ABYSS -->
+                <a class="swiper-slide project-card" href="https://www.behance.net/gallery/257318843/Neon-Abyss" target="_blank" rel="noopener noreferrer" aria-label="Découvrir le projet Néon Abyss">
+                    <img src="assets/images/vignette_cyberpunk.png" alt="Environnement urbain cyberpunk en 3D" />
+
                     <div class="content">
-                        <p class="top">INTERACTIF</p>
-                        <p class="middle">Led Invader</p>
+                        <p class="top">ENVIRONNEMENT 3D</p>
+                        <p class="middle">Néon Abyss</p>
+
                         <div class="lien">
-                            <a href="https://www.behance.net/gallery/257317933/Led-Invader" target="_blank" rel="noopener noreferrer">
-                                Voir le projet
-                                <svg class="icon icon--lg">
-                                    <use href="#icon-fleche-rond"></use>
-                                </svg>
-                            </a>
+                            <span>Voir le projet</span>
+                            <svg class="icon icon--lg" aria-hidden="true">
+                                <use href="#icon-fleche-rond"></use>
+                            </svg>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/vignette_cyberpunk.png" alt="Photo d'un restaurant" />
-                    <div class="content">
-                        <p class="top">MODÉLISATION 3D</p>
-                        <p class="middle">Cinematique Cyberpunk</p>
-                        <div class="lien">
-                            <a href="https://www.behance.net/gallery/257318843/Neon-Abyss" target="_blank" rel="noopener noreferrer">
-                                Voir le projet
-                                <svg class="icon icon--lg">
-                                    <use href="#icon-fleche-rond"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
 
-            <!-- N'oubliez pas votre pagination -->
-            <!--         <div class="swiper-pagination"></div> -->
+            <!-- Barre de défilement Swiper -->
             <div class="swiper-scrollbar"></div>
         </div>
     </section>
