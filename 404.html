@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Découvrez le portfolio d’Alexandre Massé, finissant en création média spécialisé en modélisation 3D, animation, environnements 3D et médias interactifs." />
-    <title>Alexandre Massé | Portfolio</title>
+    <title>Portfolio d’Alexandre Massé</title>
     <link rel="icon" type="image/png" href="assets/images/logo.png" />
     <link rel="stylesheet" href="styles/main.css" />
 
@@ -23,7 +23,7 @@
                     </a>
                 </div>
 
-                <nav class="nav-primary">
+                <nav class="nav-primary" id="primary-navigation">
                     <ul>
                         <li>
                             <a href="index.html" class="nav-primary__item">Hub</a>
@@ -42,7 +42,7 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="header__toggle js-toggle" aria-label="Menu burger">
+                <button class="header__toggle js-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -82,6 +82,7 @@
             </div>
         </div>
     </header>
+
     <main class="error-page">
         <div class="error-page__orb error-page__orb--large" aria-hidden="true"></div>
 
@@ -270,8 +271,9 @@
                 </div>
 
                 <p class="footer__ai">
-                    <strong>Utilisation IA</strong>
-                    — J’ai utilisé ChatGPT pour générer des pistes et comparer des options.
+                    <strong>Utilisation de l’IA</strong>
+                    <span>J’ai utilisé l’IA à certains endroits du code, notamment pour
+                        explorer des pistes et comparer des options.</span>
                     J’ai choisi, combiné et adapté les idées retenues. Les expériences et
                     les idées sont les miennes.
                 </p>

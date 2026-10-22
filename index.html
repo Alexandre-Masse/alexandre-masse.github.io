@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Découvrez le portfolio d’Alexandre Massé, finissant en création média spécialisé en modélisation 3D, animation, environnements 3D et médias interactifs." />
-    <title>Alexandre Massé | Portfolio</title>
+    <title>Portfolio d’Alexandre Massé</title>
     <link rel="icon" type="image/png" href="assets/images/logo.png" />
     <link rel="stylesheet" href="styles/main.css" />
 
@@ -23,7 +23,7 @@
                     </a>
                 </div>
 
-                <nav class="nav-primary">
+                <nav class="nav-primary" id="primary-navigation">
                     <ul>
                         <li>
                             <a href="index.html" class="nav-primary__item">Hub</a>
@@ -42,7 +42,7 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="header__toggle js-toggle" aria-label="Menu burger">
+                <button class="header__toggle js-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -83,6 +83,7 @@
         </div>
     </header>
 
+
     <!-- Votre contenu ici -->
 
     <!--<img class="img_background" src="assets/images/Background.png" alt="background" />-->
@@ -92,7 +93,7 @@
        C688, 109 125, 14 0, 0
        V1535 H1440 Z" fill="#EBE9E4" />
         </svg>
-        <img class="robot" src="assets/images/Robot_hero_hub.png" alt="Hero image robot sur un cube" data-parallax />
+        <img class="robot" src="assets/images/Robot_hero_hub.webp" alt="Hero image robot sur un cube" data-parallax fetchpriority="high" />
     </div>
 
     <section class="hero">
@@ -152,7 +153,7 @@
             <div class="swiper-wrapper">
                 <!-- LA RUELLE -->
                 <a class="swiper-slide project-card" href="https://www.behance.net/gallery/257318395/La-ruelle" target="_blank" rel="noopener noreferrer" aria-label="Découvrir le projet La Ruelle">
-                    <img src="assets/images/vignette_integration.png" alt="Environnement 3D de la ruelle" />
+                    <img src="assets/images/vignette_integration.webp" alt="Environnement 3D de la ruelle" />
 
                     <div class="content">
                         <p class="top">CAMERA MAPPING</p>
@@ -169,7 +170,7 @@
 
                 <!-- ROBOT 3D -->
                 <a class="swiper-slide project-card" href="https://www.behance.net/gallery/257285527/Robot-CGI" target="_blank" rel="noopener noreferrer" aria-label="Découvrir le projet Robot CGI">
-                    <img src="assets/images/vignette_robot.png" alt="Robot futuriste modélisé en 3D" />
+                    <img src="assets/images/vignette_robot.webp" alt="Robot futuriste modélisé en 3D" />
 
                     <div class="content">
                         <p class="top">MODÉLISATION 3D</p>
@@ -186,7 +187,7 @@
 
                 <!-- ROUTE INFINIE -->
                 <a class="swiper-slide project-card" href="https://www.behance.net/gallery/256604997/Route-Infini" target="_blank" rel="noopener noreferrer" aria-label="Découvrir le projet Route infinie">
-                    <img src="assets/images/vignette_route_infini.png" alt="Environnement spatial de Route infinie" />
+                    <img src="assets/images/vignette_route_infini.webp" alt="Environnement spatial de Route infinie" />
 
                     <div class="content">
                         <p class="top">ENVIRONNEMENT 3D</p>
@@ -203,7 +204,7 @@
 
                 <!-- LED INVADER -->
                 <a class="swiper-slide project-card" href="https://www.behance.net/gallery/257317933/Led-Invader" target="_blank" rel="noopener noreferrer" aria-label="Découvrir le projet LED Invader">
-                    <img src="assets/images/vignette_led_vader.png" alt="Installation LED du jeu interactif LED Invader" />
+                    <img src="assets/images/vignette_led_vader.webp" alt="Installation LED du jeu interactif LED Invader" />
 
                     <div class="content">
                         <p class="top">MÉDIAS INTERACTIFS</p>
@@ -220,7 +221,7 @@
 
                 <!-- NÉON ABYSS -->
                 <a class="swiper-slide project-card" href="https://www.behance.net/gallery/257318843/Neon-Abyss" target="_blank" rel="noopener noreferrer" aria-label="Découvrir le projet Néon Abyss">
-                    <img src="assets/images/vignette_cyberpunk.png" alt="Environnement urbain cyberpunk en 3D" />
+                    <img src="assets/images/vignette_cyberpunk.webp" alt="Environnement urbain cyberpunk en 3D" />
 
                     <div class="content">
                         <p class="top">ENVIRONNEMENT 3D</p>
@@ -399,8 +400,9 @@
                 </div>
 
                 <p class="footer__ai">
-                    <strong>Utilisation IA</strong>
-                    — J’ai utilisé ChatGPT pour générer des pistes et comparer des options.
+                    <strong>Utilisation de l’IA</strong>
+                    <span>J’ai utilisé l’IA à certains endroits du code, notamment pour
+                        explorer des pistes et comparer des options.</span>
                     J’ai choisi, combiné et adapté les idées retenues. Les expériences et
                     les idées sont les miennes.
                 </p>
