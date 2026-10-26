@@ -2435,9 +2435,14 @@ img.robot {
     width: 80%;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1920px) {
   img.robot {
     width: 70%;
+  }
+}
+@media (max-width: 1900px) {
+  img.robot {
+    width: 80%;
   }
 }
 @media (max-width: 700px) {
@@ -2463,7 +2468,6 @@ img.robot {
   position: absolute;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   background-color: #e7e6e4;
 }
 @media (max-width: 1300px) {
@@ -2634,7 +2638,7 @@ a.button_projet svg {
    SECTION PROJETS
 ========================================================= */
 .projets {
-  padding-top: 260px;
+  padding-top: 320px;
   margin-bottom: 100px;
 }
 @media (max-width: 1100px) {
@@ -2922,7 +2926,7 @@ a.button_projet svg {
    NE PAS modifier le CSS du .wrapper.
 ========================================================= */
 .a-propos {
-  margin-top: 180px;
+  margin-top: 300px;
   padding-top: 125px;
   padding-bottom: 80px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #ebe9e4 50%);
